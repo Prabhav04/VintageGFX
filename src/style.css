@@ -33,10 +33,17 @@ body {
   line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 #app {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  width: 100%;
   border-left: 1px dashed var(--neon-cyan);
   border-right: 1px dashed var(--neon-cyan);
   min-height: 100vh;
@@ -96,6 +103,7 @@ h1.masthead {
   justify-content: center;
   gap: 2rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
   font-family: var(--font-mono);
   font-size: 0.9rem;
   color: var(--neon-yellow);
@@ -151,7 +159,7 @@ h3 {
 
 .wallpaper-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 3rem;
 }
 
@@ -246,8 +254,37 @@ footer {
 }
 
 @media (max-width: 768px) {
+  #app {
+    padding: 1rem;
+    border-width: 0;
+    width: 100%;
+  }
+
   h1.masthead {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1.masthead {
+    font-size: 2.2rem;
+  }
+
+  .meta-bar {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .retro-btn {
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-content {
+    padding: 1rem;
+    width: 95%;
   }
 }
 
