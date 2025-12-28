@@ -1,4 +1,4 @@
-# Retro GFX - Electric 90s Wallpaper Website
+# Vintage GFX - Electric 90s Wallpaper Website
 
 A nostalgic, 90s-inspired wallpaper showcase website built with Vanilla JavaScript and Vite. This project captures the essence of the "Electric 90s" with a retro terminal interface, neon aesthetics, and classic Indian cinema references.
 
