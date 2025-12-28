@@ -174,7 +174,7 @@ btnSubmitRequest.addEventListener('click', () => {
   const desc = document.getElementById('req-desc').value;
 
   const body = `Subject: ${subject}%0D%0ASource: ${source}%0D%0ADescription: ${desc}`;
-  window.location.href = `mailto:your-email@example.com?subject=Wallpaper Request: ${subject}&body=${body}`;
+  window.location.href = `mailto:Prabhavnarayanan74@gmail.com?subject=Wallpaper Request: ${subject}&body=${body}`;
 
   reqModal.style.display = 'none';
 });
